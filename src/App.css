@@ -1,0 +1,249 @@
+
+body, html {
+  background-color: #00d1b2;
+  color: white;
+}
+h2{
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your chosen font */
+  font-weight: 600; /* Adjust weight as needed */
+}
+h1 {
+  font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your chosen font */
+  font-weight: 900; /* Adjust weight as needed */
+  text-align: center; /* If you want to center it */
+  color: #ffffff; /* Teal color, or choose another */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for a 'cool' effect */
+}
+h3 {
+  text-align: center; /* If you want to center it */
+  color: #00937d; /* Teal color, or choose another */
+}
+h5 {
+  size: 100px;
+}
+.container {
+  max-width: 100%; /* Set a max width for the content */
+  margin: 0 auto; /* Center the content */
+  padding: 0; /* Add some padding to the left and right */
+
+}
+/* Columns for lists */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.column {
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  flex-grow: 1;
+  flex-basis: 0; 
+}
+
+/* */
+
+/* header.css */
+
+.Header-brand {
+  width: 100%; /* Full width */
+  background-color: #00c7a9; 
+  color: white; /* White text color */
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+/* Button styles */
+.Header-brand button {
+  background-color: rgb(255, 255, 255); /* White background for buttons */
+  color: #00b197; /* Teal text color for buttons, to match the header background */
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem; /* Space out buttons */
+  cursor: pointer;
+  border-radius: 4px;
+  float: right; /* Align buttons to the right */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.Header-brand button:hover {
+  background-color: #f0fff3; /* Light grey background on hover */
+}
+
+/* Clear floats */
+.Header-brand::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* login.css */
+
+.Login {
+  max-width: 320px; /* Set a max width for the form */
+  margin: auto; /* Center the form on the page */
+  padding: 1rem;
+  background-color: #ffffff; /* Assuming a white form background */
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
+  transition: box-shadow 0.3s;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.Login:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow on hover for a dynamic effect */
+}
+
+.Login input {
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin: 10px 0; /* Margin for spacing */
+  box-sizing: border-box; /* Include padding in width */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px;
+}
+
+.Login button {
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #00d1b2; /* Teal background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Login button:hover {
+  background-color: #00c4a7; /* Darker teal on hover */
+}
+
+.Login h2 {
+  margin: 0 0 1rem 0; /* Remove margin on top, add margin on bottom */
+  text-align: center; /* Center the heading */
+  color: #00d1b2;
+}
+
+.Login a {
+  text-decoration: none; /* Remove underline from links */
+  color: #00d1b2; /* Teal text color */
+}
+
+.Login a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+.Login p {
+  margin: 0; /* Remove margin on top and bottom */
+  text-align: center; /* Center the paragraph */
+  color: #00d1b2;
+}
+
+/* Clearfix for floated elements */
+.Login::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.error-message {
+  color: red;
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Add some spacing */
+}
+
+.signup-prompt p {
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Add some spacing */
+}
+
+
+/* task.css */
+
+.task {
+  background-color: #f9f9f9; /* Light background to differentiate the task */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 10px; /* Padding around the content */
+  margin-bottom: 10px; /* Space between tasks */
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between task name and buttons */
+}
+
+.taskName {
+  padding: 5px 10px; /* Padding around the name */
+  margin-right: auto; /* Ensure name takes up available space, pushing buttons to the right */
+  color: #333; /* Dark text for visibility */
+}
+
+.task button, .task select {
+  padding: 5px 15px; /* Padding inside buttons/select */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for buttons/select */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.task button {
+  background-color: #00d1b2; /* Teal background */
+  color: white; /* White text */
+}
+
+
+.task select {
+  background-color: white; /* White background for select */
+  color: #333; /* Dark text for visibility */
+}
+
+/* Hover effect for buttons */
+.task button:hover {
+  background-color: #00897b; /* Slightly darker shade of teal */
+}
+
+.delete {
+  background-color: #ff8a80; /* Red background */
+  color: white; /* White text */
+  margin: 10px; /* Space between buttons */
+
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.delete:hover {
+  background-color: #ff7875; /* Lighter red on hover */
+}
+
+.addTask {
+  margin-top: 20px; /* Space between tasks and add task button */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between input and button */
+  text-decoration: none;
+  color: #00d1b2;
+}
+
+.list-header {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between task name and buttons */
+  margin-bottom: 10px; /* Space between tasks */
+}
+
+.list-header button {
+  padding: 5px 10px; /* Padding inside buttons */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+  background-color: #ffd7d7; /* Teal background */
+}
