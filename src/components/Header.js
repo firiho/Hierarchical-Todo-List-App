@@ -1,8 +1,23 @@
 import Container from 'react-bootstrap/Container';
-import React from 'react'; // Ensure React is imported
+import React, {useEffect, useState} from 'react';
 
 export default function Header() {
-  const isLoggedIn = localStorage.getItem('token');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      setIsLoggedIn(false);
+    }
+    else {
+      setIsLoggedIn(true);
+    }
+  }
+  , []);
+  console.log('isLoggedIn:', isLoggedIn);
+  console.log('localStorage:', localStorage);
+  console.log('localStorage:', localStorage.getItem('token'));
+
 
   const logout = () => {
     localStorage.removeItem('token'); 
