@@ -34,17 +34,32 @@ N.B: When running the backend, remember to go into /api and run:
 ```python
 export FLASK_APP=__init__.py
 ```
-
-## Breakdown
-- All pages are located in /src/pages
-- All components are located in /src/components
-- All backend files are located in /api
-
 ## Usage
 - Sign up for an account and log in.
 - Create a new list by clicking "New list".
 - Click add new task to add a task and its sub tasks
 - Toggle the visibility of sub-tasks as needed using the down arrow.
+
+## Breakdown
+
+### Front End
+- All pages are located in /src/pages
+- All components are located in /src/components
+- All backend files are located in /api
+
+### Back End
+- All authentications are in /api/auth.py
+- All task related api calls are in /api/tasks.py
+- All database models are in /api/models.py
+
+## Possible next steps
+
+### Optimization
+- I am handling all the Api calls in individual files without using an API client, Making one would improve the efficiency.
+- Unlinking the ListItem table from the users and always accessing them from the List table would increase the time complexity.
+- In the front-end, implementing a drag and drop feature would introduce more satisfying user interaction.
+
+These are all features I wanted to imprement and will in the future.
 
 ## AI Policy
 I used ChatGPT to refine my ideas and troubleshoot my code. While ChatGPT provided valuable insights and suggestions, the core design, implementation, and problem-solving efforts were independently conducted. I also used GitHub Copilot in VS Code whenever it autofilled with correct code.
