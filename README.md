@@ -3,8 +3,6 @@
 ## Overview
 This application allows users to create, view, and manage a hierarchical list of tasks. Each task can have multiple sub-tasks, allowing for a depth of up to three levels (task -> sub-task -> sub-sub-task).
 
-Check out Demo Video here: https://www.loom.com/share/5357bf687b6f4bbcbc74695e7b2c5fe0?sid=619d680d-15e8-4ae3-8658-5ede5b185b39
-
 ## Features
 - **User Authentication:** Implements secure login and signup functionalities.
 - **Task Management:** Enables creating, editing, and deleting of tasks, sub-tasks, and sub-sub-tasks.
@@ -60,6 +58,3 @@ export FLASK_APP=__init__.py
 - In the front-end, implementing a drag and drop feature would introduce more satisfying user interaction.
 
 These are all features I wanted to imprement and will in the future.
-
-## AI Policy
-I used ChatGPT to refine my ideas and troubleshoot my code. While ChatGPT provided valuable insights and suggestions, the core design, implementation, and problem-solving efforts were independently conducted. I also used GitHub Copilot in VS Code whenever it autofilled with correct code.

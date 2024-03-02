@@ -4,6 +4,9 @@ function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+
+    // remove token from local storage
+    localStorage.removeItem('token');
     
     const handleSubmit = async (e) => {
         e.preventDefault();
